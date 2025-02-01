@@ -1,0 +1,14 @@
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.AssemblyInfo.cs
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\bin\Debug\net8.0\EmployeeApp.exe
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\bin\Debug\net8.0\EmployeeApp.deps.json
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\bin\Debug\net8.0\EmployeeApp.runtimeconfig.json
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\bin\Debug\net8.0\EmployeeApp.dll
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\bin\Debug\net8.0\EmployeeApp.pdb
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.dll
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\refint\EmployeeApp.dll
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.pdb
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\EmployeeApp.genruntimeconfig.cache
+C:\Users\HP\source\repos\EmployeeApp\EmployeeApp\obj\Debug\net8.0\ref\EmployeeApp.dll

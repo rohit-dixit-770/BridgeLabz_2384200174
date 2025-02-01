@@ -1,0 +1,14 @@
+C:\Users\HP\source\repos\BookDetails\BookDetails\bin\Debug\net8.0\BookDetails.exe
+C:\Users\HP\source\repos\BookDetails\BookDetails\bin\Debug\net8.0\BookDetails.deps.json
+C:\Users\HP\source\repos\BookDetails\BookDetails\bin\Debug\net8.0\BookDetails.runtimeconfig.json
+C:\Users\HP\source\repos\BookDetails\BookDetails\bin\Debug\net8.0\BookDetails.dll
+C:\Users\HP\source\repos\BookDetails\BookDetails\bin\Debug\net8.0\BookDetails.pdb
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\BookDetails.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\BookDetails.AssemblyInfoInputs.cache
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\BookDetails.AssemblyInfo.cs
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\BookDetails.csproj.CoreCompileInputs.cache
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\BookDetails.dll
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\refint\BookDetails.dll
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\BookDetails.pdb
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\BookDetails.genruntimeconfig.cache
+C:\Users\HP\source\repos\BookDetails\BookDetails\obj\Debug\net8.0\ref\BookDetails.dll
