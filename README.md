@@ -17,3 +17,5 @@ Task 7: 31-01-2025 assignment-Class and Object Practices submitted
 Task 8: 02-02-2025 assignment-Constructor, Variable, Access Modifier Practices submitted
 
 Task 9: 04-02-2025 assignment-This, Sealed, Static, Is submitted
+
+Task 10: 06-02-2025 assignment-Object Oriented Design Principles submitted
