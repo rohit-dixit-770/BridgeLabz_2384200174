@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\C#\\Assignment14\\LibraryManagementSystem\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5359F478-6980-486D-9A22-AA9F6C05467D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\documents\\c#\\assignment14\\librarymanagementsystem\\librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5359F478-6980-486D-9A22-AA9F6C05467D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5359F478-6980-486D-9A22-AA9F6C05467D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\documents\\c#\\assignment14\\librarymanagementsystem\\librarymanagementsystem\\librarylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5359F478-6980-486D-9A22-AA9F6C05467D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\librarylinkedlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5359F478-6980-486D-9A22-AA9F6C05467D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|c:\\users\\hp\\documents\\c#\\assignment14\\librarymanagementsystem\\librarymanagementsystem\\booknode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5359F478-6980-486D-9A22-AA9F6C05467D}|LibraryManagementSystem\\LibraryManagementSystem.csproj|solutionrelative:librarymanagementsystem\\booknode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LibraryLinkedList.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\C#\\Assignment14\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryLinkedList.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\LibraryLinkedList.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\C#\\Assignment14\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryLinkedList.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\LibraryLinkedList.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAAAAANAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T15:12:03.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BookNode.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\C#\\Assignment14\\LibraryManagementSystem\\LibraryManagementSystem\\BookNode.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\BookNode.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\C#\\Assignment14\\LibraryManagementSystem\\LibraryManagementSystem\\BookNode.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\BookNode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T15:11:02.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\C#\\Assignment14\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
+              "RelativeDocumentMoniker": "LibraryManagementSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\C#\\Assignment14\\LibraryManagementSystem\\LibraryManagementSystem\\Program.cs",
+              "RelativeToolTip": "LibraryManagementSystem\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-12T15:10:43.89Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

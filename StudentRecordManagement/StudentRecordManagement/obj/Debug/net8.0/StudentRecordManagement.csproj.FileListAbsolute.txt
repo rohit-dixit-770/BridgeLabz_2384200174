@@ -1,0 +1,14 @@
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\StudentRecordManagement.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\StudentRecordManagement.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\StudentRecordManagement.AssemblyInfo.cs
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\StudentRecordManagement.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\bin\Debug\net8.0\StudentRecordManagement.exe
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\bin\Debug\net8.0\StudentRecordManagement.deps.json
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\bin\Debug\net8.0\StudentRecordManagement.runtimeconfig.json
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\bin\Debug\net8.0\StudentRecordManagement.dll
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\bin\Debug\net8.0\StudentRecordManagement.pdb
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\StudentRecordManagement.dll
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\refint\StudentRecordManagement.dll
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\StudentRecordManagement.pdb
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\StudentRecordManagement.genruntimeconfig.cache
+C:\Users\HP\Documents\C#\Assignment14\StudentRecordManagement\StudentRecordManagement\obj\Debug\net8.0\ref\StudentRecordManagement.dll

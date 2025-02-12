@@ -1,0 +1,14 @@
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\bin\Debug\net8.0\MovieManagementSystem.exe
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\bin\Debug\net8.0\MovieManagementSystem.deps.json
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\bin\Debug\net8.0\MovieManagementSystem.runtimeconfig.json
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\bin\Debug\net8.0\MovieManagementSystem.dll
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\bin\Debug\net8.0\MovieManagementSystem.pdb
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\MovieManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\MovieManagementSystem.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\MovieManagementSystem.AssemblyInfo.cs
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\MovieManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\MovieManagementSystem.dll
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\refint\MovieManagementSystem.dll
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\MovieManagementSystem.pdb
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\MovieManagementSystem.genruntimeconfig.cache
+C:\Users\HP\Documents\C#\Assignment14\MovieManagementSystem\MovieManagementSystem\obj\Debug\net8.0\ref\MovieManagementSystem.dll
