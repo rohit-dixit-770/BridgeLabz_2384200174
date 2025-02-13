@@ -21,3 +21,9 @@ Task 9: 04-02-2025 assignment-This, Sealed, Static, Is submitted
 Task 10: 06-02-2025 assignment-Object Oriented Design Principles submitted
 
 Task 11: 08-02-2025 assignment-Inheritance submitted
+
+Task 12: 10-02-2025 assignment-Encapsulation, Polymorphism, Interface, Abstract Class Submitted
+
+Task 13: 12-02-2025 assignment-Data Structures-LinkedList Submitted
+
+Task 14: 12-02-2025 assignment-Stack, Queue, HashMap Submitted
