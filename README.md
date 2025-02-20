@@ -26,4 +26,16 @@ Task 12: 10-02-2025 assignment-Encapsulation, Polymorphism, Interface, Abstract 
 
 Task 13: 12-02-2025 assignment-Data Structures-LinkedList Submitted
 
-Task 14: 12-02-2025 assignment-Stack, Queue, HashMap Submitted
+Task 14: 13-02-2025 assignment-Stack, Queue, HashMap Submitted
+
+Task 15: 14-02-2025 assignment-Sorting Algorithm submitted
+
+Task 16: 16-02-2025 assignment-Linear and Binary Search submitted
+
+Task 17: 17-02-2025 assignment-Algorithm and Runtime Analysis submitted
+
+Task 18: 18-02-2025 assignment-C# Genrics submitted
+
+Task 19: 19-02-2025 assignment-Collection submitted
+
+Task 20: 20-02-2025 assignment-Stream submitted
