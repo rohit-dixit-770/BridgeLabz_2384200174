@@ -1,0 +1,15 @@
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\Week 4 Assignment 5 Testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\Week 4 Assignment 5 Testing.AssemblyInfoInputs.cache
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\Week 4 Assignment 5 Testing.AssemblyInfo.cs
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\Week 4 Assignment 5 Testing.csproj.CoreCompileInputs.cache
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\Week 4 Assignment 5 Testing.sourcelink.json
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\bin\Debug\net6.0\Week 4 Assignment 5 Testing.exe
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\bin\Debug\net6.0\Week 4 Assignment 5 Testing.deps.json
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\bin\Debug\net6.0\Week 4 Assignment 5 Testing.runtimeconfig.json
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\bin\Debug\net6.0\Week 4 Assignment 5 Testing.dll
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\bin\Debug\net6.0\Week 4 Assignment 5 Testing.pdb
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\Week 4 Assignment 5 Testing.dll
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\refint\Week 4 Assignment 5 Testing.dll
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\Week 4 Assignment 5 Testing.pdb
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\Week 4 Assignment 5 Testing.genruntimeconfig.cache
+C:\Users\anilk\OneDrive\Desktop\csharp\Bridgelabz_2384200020\Week 4 Assignment 5and 6\Week 4 Assignment 5 Testing\obj\Debug\net6.0\ref\Week 4 Assignment 5 Testing.dll
