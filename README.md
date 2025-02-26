@@ -48,3 +48,4 @@ Task 23: 24-02-2025 assignment-Annotation And Reflection submitted
 
 Task 24: 25-02-2025 assignment-CSV file handling submitted
 
+Task 25: 26-02-2025 assignment-JSON submitted
