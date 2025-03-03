@@ -49,3 +49,11 @@ Task 23: 24-02-2025 assignment-Annotation And Reflection submitted
 Task 24: 25-02-2025 assignment-CSV file handling submitted
 
 Task 25: 26-02-2025 assignment-JSON submitted
+
+Task 26: 28-02-2025 assignment-WebAPI submitted
+
+Task 27: 01-03-2025 assignment-Entity Framework submitted
+
+Task 28: 03-03-2025 assignment-API Swagger And Logger Implementation submitted
+
+
