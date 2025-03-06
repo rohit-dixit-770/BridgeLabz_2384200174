@@ -56,4 +56,6 @@ Task 27: 01-03-2025 assignment-Entity Framework submitted
 
 Task 28: 03-03-2025 assignment-API Swagger And Logger Implementation submitted
 
+Task 28: 04-03-2025 assignment-REST APIs Implementation submitted
 
+Task 28: 06-03-2025 assignment-Redis Implementation submitted
