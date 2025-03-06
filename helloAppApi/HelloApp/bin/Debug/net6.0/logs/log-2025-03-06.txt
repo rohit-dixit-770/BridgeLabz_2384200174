@@ -1,0 +1,777 @@
+2025-03-06 20:19:54.9340 | Info | Starting application... | 
+2025-03-06 20:20:03.2441 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 20:20:04.9038 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 20:20:04.9232 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 20:20:05.2463 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 20:20:05.3440 | Info | Hosting environment: Development | 
+2025-03-06 20:20:05.5280 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 20:20:09.9173 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 20:20:14.5774 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 4672.0213ms | 
+2025-03-06 20:20:14.6323 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/swagger-ui.css - - | 
+2025-03-06 20:20:14.6323 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 20:20:14.6323 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/swagger-ui-bundle.js - - | 
+2025-03-06 20:20:14.6323 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.css - - | 
+2025-03-06 20:20:14.6323 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/swagger-ui-standalone-preset.js - - | 
+2025-03-06 20:20:14.6937 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 61.2187ms | 
+2025-03-06 20:20:14.7084 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 20:20:14.7168 | Info | The file /index.css was not modified | 
+2025-03-06 20:20:14.7168 | Info | The file /swagger-ui-bundle.js was not modified | 
+2025-03-06 20:20:14.7168 | Info | The file /swagger-ui.css was not modified | 
+2025-03-06 20:20:14.7168 | Info | The file /swagger-ui-standalone-preset.js was not modified | 
+2025-03-06 20:20:14.7168 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 9.8697ms | 
+2025-03-06 20:20:14.7168 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/swagger-ui-bundle.js - - - 304 - application/javascript 87.8434ms | 
+2025-03-06 20:20:14.7168 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.css - - - 304 - text/css 87.8482ms | 
+2025-03-06 20:20:14.7168 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/swagger-ui.css - - - 304 - text/css 88.6318ms | 
+2025-03-06 20:20:14.7168 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 20:20:14.7431 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 110.3364ms | 
+2025-03-06 20:20:15.6232 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 901.9145ms | 
+2025-03-06 20:20:15.9259 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 20:20:15.9499 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 24.0424ms | 
+2025-03-06 20:21:36.6832 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 20:21:37.1921 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 20:21:37.3134 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 20:21:38.6794 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 20:21:38.7277 | Info | Attempting login for email: rohit@abc.com | 
+2025-03-06 20:21:41.6619 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-06 20:21:46.2267 | Error | Failed executing DbCommand (310ms) [Parameters=[@__login_Email_0='?' (Size = 4000), @__login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__login_Email_0) AND ([u].[Password] = @__login_Password_1) | 
+2025-03-06 20:21:46.4301 | Error | An exception occurred while iterating over the results of a query for context type 'RepositoryLayer.Context.HelloAppContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6d30734a-28ae-4b9d-aa25-645d6c7e93de
+Error Number:207,State:1,Class:16 | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:6d30734a-28ae-4b9d-aa25-645d6c7e93de
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:21:46.7642 | Error | Error occurred during login for email: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+ClientConnectionId:6d30734a-28ae-4b9d-aa25-645d6c7e93de
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:21:46.9962 | Error | Error during login for user: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 27
+ClientConnectionId:6d30734a-28ae-4b9d-aa25-645d6c7e93de
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:21:47.1784 | Error | Exception during login for user: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 27
+   at HelloApp.Controllers.HelloAppController.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Controllers\HelloAppController.cs:line 32
+ClientConnectionId:6d30734a-28ae-4b9d-aa25-645d6c7e93de
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:21:47.2439 | Info | Executing ObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 20:21:47.3440 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 9942.1814ms | 
+2025-03-06 20:21:47.3440 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 20:21:47.3865 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - application/json;+charset=utf-8 10703.1085ms | 
+2025-03-06 20:27:59.6583 | Info | Starting application... | 
+2025-03-06 20:28:07.0025 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 20:28:08.3209 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 20:28:08.3474 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 20:28:08.7329 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 20:28:08.8377 | Info | Hosting environment: Development | 
+2025-03-06 20:28:08.8377 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 20:28:10.7413 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 20:28:12.1582 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 1429.4845ms | 
+2025-03-06 20:28:12.2152 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 20:28:12.2152 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 8.5225ms | 
+2025-03-06 20:28:12.2347 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 20:28:12.2583 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 20:28:12.2656 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 31.0347ms | 
+2025-03-06 20:28:12.5108 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 252.5451ms | 
+2025-03-06 20:28:13.4494 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 20:28:13.4727 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 23.2797ms | 
+2025-03-06 20:29:09.0355 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 20:29:09.5032 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 20:29:09.6108 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 20:29:10.9775 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 20:29:11.0091 | Info | Attempting login for email: rohit@abc.com | 
+2025-03-06 20:29:13.9203 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-06 20:29:18.4634 | Error | Failed executing DbCommand (283ms) [Parameters=[@__login_Email_0='?' (Size = 4000), @__login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__login_Email_0) AND ([u].[Password] = @__login_Password_1) | 
+2025-03-06 20:29:18.6795 | Error | An exception occurred while iterating over the results of a query for context type 'RepositoryLayer.Context.HelloAppContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:c6911c99-ebf3-47bb-bad2-eaa4a166d6be
+Error Number:207,State:1,Class:16 | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:c6911c99-ebf3-47bb-bad2-eaa4a166d6be
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:29:18.9953 | Error | Error occurred during login for email: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+ClientConnectionId:c6911c99-ebf3-47bb-bad2-eaa4a166d6be
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:29:19.2033 | Error | Error during login for user: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 27
+ClientConnectionId:c6911c99-ebf3-47bb-bad2-eaa4a166d6be
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:29:19.3854 | Error | Exception during login for user: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 27
+   at HelloApp.Controllers.HelloAppController.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Controllers\HelloAppController.cs:line 30
+ClientConnectionId:c6911c99-ebf3-47bb-bad2-eaa4a166d6be
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:29:19.4559 | Info | Executing ObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 20:29:19.4835 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 9854.1236ms | 
+2025-03-06 20:29:19.4835 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 20:29:19.5573 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - application/json;+charset=utf-8 10521.7859ms | 
+2025-03-06 20:46:45.7153 | Info | Starting application... | 
+2025-03-06 20:46:57.8765 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 20:47:02.8476 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 20:47:02.8520 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 20:47:03.3733 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 20:47:03.3917 | Info | Hosting environment: Development | 
+2025-03-06 20:47:03.3917 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 20:47:08.1289 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 20:47:12.4630 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 20:47:12.4630 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 20:47:12.4630 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 20:47:12.5176 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 4319.3098ms | 
+2025-03-06 20:47:12.5262 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 63.1957ms | 
+2025-03-06 20:47:12.6573 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 194.3133ms | 
+2025-03-06 20:47:13.3136 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 850.3062ms | 
+2025-03-06 20:47:15.1549 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 20:47:15.1774 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 25.0918ms | 
+2025-03-06 20:48:01.8704 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 20:48:03.0197 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 20:48:03.2144 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 20:48:06.9044 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 20:48:06.9978 | Info | Attempting login for email: rohit@abc.com | 
+2025-03-06 20:48:12.9143 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-06 20:48:23.6597 | Error | Failed executing DbCommand (778ms) [Parameters=[@__login_Email_0='?' (Size = 4000), @__login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[UserId], [u].[Email], [u].[FirstName], [u].[LastName], [u].[Password]
+FROM [Users] AS [u]
+WHERE ([u].[Email] = @__login_Email_0) AND ([u].[Password] = @__login_Password_1) | 
+2025-03-06 20:48:24.0558 | Error | An exception occurred while iterating over the results of a query for context type 'RepositoryLayer.Context.HelloAppContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:94248598-9e53-4fa2-ad21-dcb8aadaada4
+Error Number:207,State:1,Class:16 | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+ClientConnectionId:94248598-9e53-4fa2-ad21-dcb8aadaada4
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:48:24.9252 | Error | Error occurred during login for email: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+ClientConnectionId:94248598-9e53-4fa2-ad21-dcb8aadaada4
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:48:25.1806 | Error | Error during login for user: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 27
+ClientConnectionId:94248598-9e53-4fa2-ad21-dcb8aadaada4
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:48:25.7148 | Error | Exception during login for user: rohit@abc.com | Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+Invalid column name 'FirstName'.
+Invalid column name 'LastName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.InitializeReader(Enumerator enumerator)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.TryGetSingle[TSource](IEnumerable`1 source, Boolean& found)
+   at lambda_method6(Closure , QueryContext )
+   at System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source, Expression`1 predicate)
+   at RepositoryLayer.Service.RegisterHelloRL.Login(LoginDTO login) in C:\Users\HP\Documents\Self\helloAppApi\RepositoryLayer\Service\RegisterHelloRL.cs:line 31
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 27
+   at HelloApp.Controllers.HelloAppController.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Controllers\HelloAppController.cs:line 30
+ClientConnectionId:94248598-9e53-4fa2-ad21-dcb8aadaada4
+Error Number:207,State:1,Class:16 HelpLink.ProdName: Microsoft SQL Server;HelpLink.ProdVer: 16.00.1000;HelpLink.EvtSrc: MSSQLServer;HelpLink.EvtID: 207;HelpLink.BaseHelpUrl: https://go.microsoft.com/fwlink;HelpLink.LinkId: 20476
+2025-03-06 20:48:25.9372 | Info | Executing ObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 20:48:26.0409 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 22793.2724ms | 
+2025-03-06 20:48:26.0409 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 20:48:26.2222 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - application/json;+charset=utf-8 24351.7567ms | 
+2025-03-06 20:54:38.4044 | Info | Starting application... | 
+2025-03-06 20:54:40.8776 | Error | Application stopped due to an exception | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 103
+2025-03-06 20:54:55.4757 | Info | Starting application... | 
+2025-03-06 20:54:56.0439 | Error | Application stopped due to an exception | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 103
+2025-03-06 20:55:48.0336 | Info | Starting application... | 
+2025-03-06 20:55:48.4077 | Error | Application stopped due to an exception | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 103
+2025-03-06 20:58:50.2350 | Info | Starting application... | 
+2025-03-06 20:58:51.1421 | Error | Application stopped due to an exception | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 103
+2025-03-06 20:59:16.2372 | Info | Starting application... | 
+2025-03-06 20:59:16.6992 | Error | Application stopped due to an exception | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 103
+2025-03-06 21:01:11.9264 | Info | Starting application... | 
+2025-03-06 21:01:12.3858 | Error | Application stopped due to an exception | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 103
+2025-03-06 21:01:36.5532 | Info | Starting application... | 
+2025-03-06 21:01:37.0436 | Error | Application stopped due to an exception | Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException: Exception of type 'Microsoft.Extensions.Hosting.HostFactoryResolver+HostingListener+StopTheHostException' was thrown.
+   at Microsoft.Extensions.Hosting.HostFactoryResolver.HostingListener.OnNext(KeyValuePair`2 value)
+   at System.Diagnostics.DiagnosticListener.Write(String name, Object value)
+   at Microsoft.Extensions.Hosting.HostBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 103
+2025-03-06 21:02:18.1154 | Info | Starting application... | 
+2025-03-06 21:02:21.1858 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 21:02:23.6163 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 21:02:23.6201 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 21:02:24.0594 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 21:02:24.0870 | Info | Hosting environment: Development | 
+2025-03-06 21:02:24.0870 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 21:02:26.4199 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 21:02:27.8077 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 1391.8917ms | 
+2025-03-06 21:02:27.8422 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 21:02:27.8624 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 21:02:27.8624 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 21:02:27.8927 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 30.2853ms | 
+2025-03-06 21:02:27.9035 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 61.2057ms | 
+2025-03-06 21:02:28.2115 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 348.6966ms | 
+2025-03-06 21:02:28.8318 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 21:02:28.8757 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 43.7937ms | 
+2025-03-06 21:03:31.8775 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/register application/json 105 | 
+2025-03-06 21:03:32.1726 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.RegistrationUser (HelloApp)' | 
+2025-03-06 21:03:32.2374 | Info | Route matched with {action = "RegistrationUser", controller = "HelloApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult RegistrationUser(ModelLayer.DTO.RegisterDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 21:03:33.1683 | Info | Registering new user: rohit@abc.com | 
+2025-03-06 21:03:35.7583 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-06 21:03:40.1803 | Info | Executed DbCommand (341ms) [Parameters=[@__registerDTO_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[Email], [a].[FirstName], [a].[LastName], [a].[Password]
+FROM [AllUsers] AS [a]
+WHERE [a].[Email] = @__registerDTO_Email_0 | 
+2025-03-06 21:03:41.0437 | Info | Executed DbCommand (20ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AllUsers] ([Email], [FirstName], [LastName], [Password])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [UserId]
+FROM [AllUsers]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity(); | 
+2025-03-06 21:03:41.2510 | Info | User registered successfully: rohit@abc.com | 
+2025-03-06 21:03:41.2750 | Info | Executing CreatedResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[ModelLayer.DTO.RegistrationResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. | 
+2025-03-06 21:03:41.3179 | Info | Executed action HelloApp.Controllers.HelloAppController.RegistrationUser (HelloApp) in 9055.1446ms | 
+2025-03-06 21:03:41.3179 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.RegistrationUser (HelloApp)' | 
+2025-03-06 21:03:41.3817 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/register application/json 105 - 201 - application/json;+charset=utf-8 9504.1826ms | 
+2025-03-06 21:04:21.6189 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 21:04:21.6189 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:04:21.6361 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 21:04:21.6508 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 21:04:21.6508 | Info | Attempting login for email: rohit@abc.com | 
+2025-03-06 21:04:21.6650 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-06 21:04:21.7358 | Info | Executed DbCommand (44ms) [Parameters=[@__login_Email_0='?' (Size = 4000), @__login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[Email], [a].[FirstName], [a].[LastName], [a].[Password]
+FROM [AllUsers] AS [a]
+WHERE ([a].[Email] = @__login_Email_0) AND ([a].[Password] = @__login_Password_1) | 
+2025-03-06 21:04:22.4608 | Info | Login successful for email: rohit@abc.com | 
+2025-03-06 21:04:22.4654 | Info | Login successful for user: rohit@abc.com | 
+2025-03-06 21:04:22.4654 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 21:04:22.4654 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 836.0754ms | 
+2025-03-06 21:04:22.4654 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:04:22.4849 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 200 - application/json;+charset=utf-8 865.9514ms | 
+2025-03-06 21:39:16.5625 | Info | Starting application... | 
+2025-03-06 21:39:29.0699 | Error | Application stopped due to an exception | StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter writer, Nullable`1 serverType, EndPointCollection endpoints) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 716
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 678
+   at Program.<Main>$(String[] args) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 33
+2025-03-06 21:41:55.0151 | Info | Starting application... | 
+2025-03-06 21:41:59.4930 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 21:42:00.9539 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 21:42:00.9539 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 21:42:01.3341 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 21:42:01.3401 | Info | Hosting environment: Development | 
+2025-03-06 21:42:01.3401 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 21:42:03.3053 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 21:42:04.6771 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 1385.7218ms | 
+2025-03-06 21:42:04.8069 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 21:42:04.8069 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 21:42:04.8478 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 40.8168ms | 
+2025-03-06 21:42:04.8788 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 71.7835ms | 
+2025-03-06 21:42:04.8906 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 21:42:05.3405 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 449.7738ms | 
+2025-03-06 21:42:05.7218 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 21:42:05.7439 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 22.0453ms | 
+2025-03-06 21:43:04.2690 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 21:43:04.6694 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:43:04.7621 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 21:44:28.5625 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 83776.2766ms | 
+2025-03-06 21:44:28.5731 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:44:28.5731 | Error | An unhandled exception has occurred while executing the request. | StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImpl(ConfigurationOptions configuration, TextWriter writer, Nullable`1 serverType, EndPointCollection endpoints) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 716
+   at StackExchange.Redis.ConnectionMultiplexer.Connect(ConfigurationOptions configuration, TextWriter log) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 678
+   at Program.<>c__DisplayClass0_0.<<Main>$>b__1(IServiceProvider sp) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Program.cs:line 33
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitCache(ServiceCallSite callSite, RuntimeResolverContext context, ServiceProviderEngineScope serviceProviderEngine, RuntimeResolverLock lockType)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScopeCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass2_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure , IServiceProvider , Object[] )
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.<>c__DisplayClass7_0.<CreateActivator>b__0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2025-03-06 21:44:28.7868 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - text/plain;+charset=utf-8 84517.6919ms | 
+2025-03-06 21:46:04.5965 | Info | Starting application... | 
+2025-03-06 21:46:07.6452 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 21:46:08.8372 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 21:46:08.8372 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 21:46:09.7471 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 21:46:09.7471 | Info | Hosting environment: Development | 
+2025-03-06 21:46:09.7471 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 21:46:11.2350 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 21:46:13.3443 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 2055.2017ms | 
+2025-03-06 21:46:13.3585 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 21:46:13.3585 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 21:46:13.4563 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 96.4103ms | 
+2025-03-06 21:46:13.5001 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 21:46:13.5140 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 155.5023ms | 
+2025-03-06 21:46:14.6743 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1174.2518ms | 
+2025-03-06 21:46:15.2103 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 21:46:15.2302 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 19.8773ms | 
+2025-03-06 21:46:47.7718 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 21:46:48.1035 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:46:48.2549 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 21:46:58.1360 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 21:47:04.1520 | Error | Error during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=9,QueuedItems=0,CompletedItems=209,Timers=4), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 34 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Idle;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 1;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=9,QueuedItems=0,CompletedItems=209,Timers=4);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 21:47:04.4019 | Error | Exception during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=9,QueuedItems=0,CompletedItems=209,Timers=4), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 34
+   at HelloApp.Controllers.HelloAppController.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Controllers\HelloAppController.cs:line 30 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Idle;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 1;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=9,QueuedItems=0,CompletedItems=209,Timers=4);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 21:47:04.4733 | Info | Executing ObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 21:47:04.5061 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 16234.9998ms | 
+2025-03-06 21:47:04.5093 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:47:04.5380 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - application/json;+charset=utf-8 16766.1502ms | 
+2025-03-06 21:51:36.5808 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 21:51:36.5869 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:51:36.5869 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 21:51:36.6431 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 21:51:42.0533 | Error | Error during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 2, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=11,QueuedItems=0,CompletedItems=1359,Timers=5), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 34 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Initializing;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 2;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=11,QueuedItems=0,CompletedItems=1359,Timers=5);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 21:51:42.1771 | Error | Exception during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 2, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=11,QueuedItems=0,CompletedItems=1359,Timers=5), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 34
+   at HelloApp.Controllers.HelloAppController.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Controllers\HelloAppController.cs:line 30 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Initializing;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 2;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=11,QueuedItems=0,CompletedItems=1359,Timers=5);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 21:51:42.1971 | Info | Executing ObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 21:51:42.1971 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 5598.4391ms | 
+2025-03-06 21:51:42.1971 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:51:42.1971 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - application/json;+charset=utf-8 5623.6720ms | 
+2025-03-06 21:51:50.8084 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 21:51:50.8699 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:51:50.8699 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 21:51:50.8839 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 21:51:56.0585 | Error | Error during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 3, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=11,QueuedItems=0,CompletedItems=1453,Timers=5), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 34 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Idle;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 3;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=11,QueuedItems=0,CompletedItems=1453,Timers=5);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 21:51:56.1892 | Error | Exception during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 3, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=11,QueuedItems=0,CompletedItems=1453,Timers=5), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 34
+   at HelloApp.Controllers.HelloAppController.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Controllers\HelloAppController.cs:line 30 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Idle;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 3;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=11,QueuedItems=0,CompletedItems=1453,Timers=5);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 21:51:56.1960 | Info | Executing ObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 21:51:56.1960 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 5322.7824ms | 
+2025-03-06 21:51:56.1960 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 21:51:56.1960 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - application/json;+charset=utf-8 5389.2705ms | 
+2025-03-06 22:03:45.4567 | Info | Starting application... | 
+2025-03-06 22:03:48.7350 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 22:03:50.3878 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 22:03:50.4301 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 22:03:51.1995 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 22:03:51.2437 | Info | Hosting environment: Development | 
+2025-03-06 22:03:51.2599 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 22:03:52.6531 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 22:03:54.4809 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 1834.0968ms | 
+2025-03-06 22:03:54.5657 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 22:03:54.5657 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 22:03:54.5657 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 22:03:54.5890 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 21.0668ms | 
+2025-03-06 22:03:54.6277 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 61.9485ms | 
+2025-03-06 22:03:54.9463 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 378.0471ms | 
+2025-03-06 22:03:55.3687 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 22:03:55.3901 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 21.4316ms | 
+2025-03-06 22:04:35.4190 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 22:04:35.6991 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 22:04:35.8152 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 22:04:45.5828 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 22:04:51.5888 | Error | Error during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=9,QueuedItems=0,CompletedItems=186,Timers=4), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 33 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Idle;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 1;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=9,QueuedItems=0,CompletedItems=186,Timers=4);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 22:04:51.8947 | Error | Exception during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=9,QueuedItems=0,CompletedItems=186,Timers=4), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 33
+   at HelloApp.Controllers.HelloAppController.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Controllers\HelloAppController.cs:line 30 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Idle;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 1;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=9,QueuedItems=0,CompletedItems=186,Timers=4);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 22:04:51.9906 | Info | Executing ObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 22:04:52.0263 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 16188.0512ms | 
+2025-03-06 22:04:52.0263 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 22:04:52.0690 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - application/json;+charset=utf-8 16649.9440ms | 
+2025-03-06 22:46:20.6631 | Info | Starting application... | 
+2025-03-06 22:46:35.5066 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 22:46:40.9277 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 22:46:40.9277 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 22:46:42.5604 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 22:46:42.5604 | Info | Hosting environment: Development | 
+2025-03-06 22:46:42.5604 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 22:46:45.2785 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 22:46:52.0875 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 22:46:52.1584 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 22:46:52.1584 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 22:46:52.3602 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 7009.9927ms | 
+2025-03-06 22:46:52.3602 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 206.5962ms | 
+2025-03-06 22:46:52.3689 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 281.3296ms | 
+2025-03-06 22:46:54.3118 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 2151.1695ms | 
+2025-03-06 22:46:55.3798 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 22:46:55.5171 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 137.2954ms | 
+2025-03-06 22:47:44.5325 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 22:47:46.2615 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 22:47:47.1907 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 22:54:10.1825 | Info | Starting application... | 
+2025-03-06 22:54:19.0256 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 22:54:22.4224 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 22:54:22.4224 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 22:54:22.6742 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 22:54:22.6866 | Info | Hosting environment: Development | 
+2025-03-06 22:54:22.6866 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 22:54:24.1941 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 22:54:25.8899 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 22:54:25.8899 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 22:54:25.8899 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 22:54:25.8899 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 1702.5848ms | 
+2025-03-06 22:54:25.9038 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 13.8217ms | 
+2025-03-06 22:54:25.9223 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 32.3036ms | 
+2025-03-06 22:54:26.4409 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 550.7466ms | 
+2025-03-06 22:54:26.9561 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 22:54:26.9845 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 28.3035ms | 
+2025-03-06 22:55:10.5546 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 22:55:11.0836 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 22:55:11.2530 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 22:55:23.6362 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 22:55:29.4587 | Error | Error during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=9,QueuedItems=0,CompletedItems=203,Timers=4), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 33 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Idle;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 1;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=9,QueuedItems=0,CompletedItems=203,Timers=4);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 22:55:30.4413 | Error | Exception during login for user: rohit@abc.com | StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=GET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Idle, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255), IOCP: (Busy=0,Free=1000,Min=4,Max=1000), WORKER: (Busy=0,Free=32767,Min=4,Max=32767), POOL: (Threads=9,QueuedItems=0,CompletedItems=203,Timers=4), v: 2.8.24.3255 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at BusinessLayer.Service.RegisterHelloBL.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\BusinessLayer\Service\RegisterHelloBL.cs:line 33
+   at HelloApp.Controllers.HelloAppController.LoginUser(LoginDTO loginDTO) in C:\Users\HP\Documents\Self\helloAppApi\HelloApp\Controllers\HelloAppController.cs:line 30 Redis-Message: GET user_login_rohit@abc.com;Redis-Timeout: 5000;Redis-OpsSinceLastHeartbeat: 0;Redis-Queue-Awaiting-Write: 0;Redis-Queue-Awaiting-Response: 0;Redis-Active-Writer: False;Redis-Backlog-Writer: CheckingForTimeout;Redis-Read-State: NotStarted;Redis-Write-State: Idle;Redis-Inbound-Bytes: 0;Redis-Last-Result-Bytes: 0;Redis-Inbound-Buffer-Bytes: 0;Redis-Sync-Ops: 0;Redis-Async-Ops: 1;Redis-Server-Endpoint: localhost:6379;Redis-Server-Connected-Seconds: n/a;Redis-Abort-On-Connect: 0;Redis-Multiplexer-Connects: 1/1/0;Redis-Manager: 10 of 10 available;Redis-Client-Name: ROHIT-DIXIT770(SE.Redis-v2.8.24.3255);Redis-ThreadPool-IO-Completion: (Busy=0,Free=1000,Min=4,Max=1000);Redis-ThreadPool-Workers: (Busy=0,Free=32767,Min=4,Max=32767);Redis-ThreadPool-Items: (Threads=9,QueuedItems=0,CompletedItems=203,Timers=4);Redis-Busy-Workers: 0;Redis-Version: 2.8.24.3255;redis-command: GET user_login_rohit@abc.com;request-sent-status: WaitingInBacklog;redis-server: localhost:6379
+2025-03-06 22:55:31.0305 | Info | Executing ObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 22:55:31.0866 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 19812.3912ms | 
+2025-03-06 22:55:31.0969 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 22:55:31.1331 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 500 - application/json;+charset=utf-8 20578.4106ms | 
+2025-03-06 23:04:26.6611 | Info | Starting application... | 
+2025-03-06 23:04:36.9459 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-06 23:04:40.1643 | Info | Now listening on: https://localhost:7155 | 
+2025-03-06 23:04:40.1851 | Info | Now listening on: http://localhost:5076 | 
+2025-03-06 23:04:40.5018 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-06 23:04:40.5117 | Info | Hosting environment: Development | 
+2025-03-06 23:04:40.5239 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-06 23:04:42.6397 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-06 23:04:45.4102 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 2780.0161ms | 
+2025-03-06 23:04:45.4462 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-06 23:04:45.4641 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 17.8205ms | 
+2025-03-06 23:04:45.5750 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-06 23:04:45.5973 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 23.9806ms | 
+2025-03-06 23:04:45.7177 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-06 23:04:46.0072 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 289.5308ms | 
+2025-03-06 23:04:46.9457 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-06 23:04:46.9842 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 38.6373ms | 
+2025-03-06 23:05:18.4967 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-06 23:05:19.1259 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 23:05:19.3100 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-06 23:05:22.2323 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-06 23:05:22.3201 | Info | Attempting login for email: rohit@abc.com | 
+2025-03-06 23:05:29.9166 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-06 23:05:48.6617 | Info | Executed DbCommand (1,208ms) [Parameters=[@__login_Email_0='?' (Size = 4000), @__login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[Email], [a].[FirstName], [a].[LastName], [a].[Password]
+FROM [AllUsers] AS [a]
+WHERE ([a].[Email] = @__login_Email_0) AND ([a].[Password] = @__login_Password_1) | 
+2025-03-06 23:05:52.9728 | Info | Login successful for email: rohit@abc.com | 
+2025-03-06 23:05:52.9881 | Info | Login successful for user: rohit@abc.com | 
+2025-03-06 23:05:53.0541 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-06 23:05:53.0969 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 33767.4173ms | 
+2025-03-06 23:05:53.1054 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-06 23:05:53.1869 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 200 - application/json;+charset=utf-8 34690.1442ms | 
