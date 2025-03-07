@@ -1,0 +1,114 @@
+2025-03-07 20:26:13.0900 | Info | Starting application... | 
+2025-03-07 20:26:19.4165 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-07 20:26:20.8216 | Info | Now listening on: https://localhost:7155 | 
+2025-03-07 20:26:20.8382 | Info | Now listening on: http://localhost:5076 | 
+2025-03-07 20:26:21.0855 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-07 20:26:21.0908 | Info | Hosting environment: Development | 
+2025-03-07 20:26:21.0908 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-07 20:26:23.8613 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-07 20:26:25.5690 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 1719.5160ms | 
+2025-03-07 20:26:25.5821 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/swagger-ui-bundle.js - - | 
+2025-03-07 20:26:25.5863 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.css - - | 
+2025-03-07 20:26:25.5863 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/swagger-ui.css - - | 
+2025-03-07 20:26:25.5863 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/swagger-ui-standalone-preset.js - - | 
+2025-03-07 20:26:25.5863 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-07 20:26:25.6305 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 43.2291ms | 
+2025-03-07 20:26:25.6305 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-07 20:26:25.6358 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 3.7089ms | 
+2025-03-07 20:26:25.6358 | Info | The file /swagger-ui-standalone-preset.js was not modified | 
+2025-03-07 20:26:25.6358 | Info | The file /index.css was not modified | 
+2025-03-07 20:26:25.6358 | Info | The file /swagger-ui.css was not modified | 
+2025-03-07 20:26:25.6358 | Info | The file /swagger-ui-bundle.js was not modified | 
+2025-03-07 20:26:25.6487 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/swagger-ui-standalone-preset.js - - - 304 - application/javascript 61.7934ms | 
+2025-03-07 20:26:25.6487 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.css - - - 304 - text/css 62.7091ms | 
+2025-03-07 20:26:25.6487 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/swagger-ui.css - - - 304 - text/css 64.8148ms | 
+2025-03-07 20:26:25.6487 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/swagger-ui-bundle.js - - - 304 - application/javascript 77.9031ms | 
+2025-03-07 20:26:25.7660 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-07 20:26:26.3487 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 582.4229ms | 
+2025-03-07 20:26:26.7830 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-07 20:26:26.8608 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 77.7711ms | 
+2025-03-07 20:26:34.9747 | Info | Request starting HTTP/2 GET https://localhost:7155/Second/Send-Mail - - | 
+2025-03-07 20:26:35.8884 | Info | Executing endpoint 'HelloApp.Controllers.SecondController.Get (HelloApp)' | 
+2025-03-07 20:26:36.3153 | Info | Route matched with {action = "Get", controller = "Second"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Get() on controller HelloApp.Controllers.SecondController (HelloApp). | 
+2025-03-07 20:26:45.6617 | Info | Executing OkObjectResult, writing value of type 'System.String'. | 
+2025-03-07 20:26:45.6892 | Info | Executed action HelloApp.Controllers.SecondController.Get (HelloApp) in 9352.3941ms | 
+2025-03-07 20:26:45.6892 | Info | Executed endpoint 'HelloApp.Controllers.SecondController.Get (HelloApp)' | 
+2025-03-07 20:26:45.7101 | Info | Request finished HTTP/2 GET https://localhost:7155/Second/Send-Mail - - - 200 - text/plain;+charset=utf-8 10735.4344ms | 
+2025-03-07 23:29:21.3201 | Info | Starting application... | 
+2025-03-07 23:29:26.8085 | Info | User profile is available. Using 'C:\Users\HP\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. | 
+2025-03-07 23:29:28.5907 | Info | Now listening on: https://localhost:7155 | 
+2025-03-07 23:29:28.5907 | Info | Now listening on: http://localhost:5076 | 
+2025-03-07 23:29:30.6539 | Info | Application started. Press Ctrl+C to shut down. | 
+2025-03-07 23:29:30.7240 | Info | Hosting environment: Development | 
+2025-03-07 23:29:30.8187 | Info | Content root path: C:\Users\HP\Documents\Self\helloAppApi\HelloApp\ | 
+2025-03-07 23:29:32.2511 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.html - - | 
+2025-03-07 23:29:36.4407 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.html - - - 200 - text/html;charset=utf-8 4201.8388ms | 
+2025-03-07 23:29:36.9118 | Info | Request starting HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - | 
+2025-03-07 23:29:36.9164 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/index.js - - | 
+2025-03-07 23:29:36.9164 | Info | Request starting HTTP/2 GET https://localhost:7155/_vs/browserLink - - | 
+2025-03-07 23:29:36.9494 | Info | Request finished HTTP/2 GET https://localhost:7155/_framework/aspnetcore-browser-refresh.js - - - 200 11974 application/javascript;+charset=utf-8 37.5446ms | 
+2025-03-07 23:29:36.9847 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/index.js - - - 200 - application/javascript;charset=utf-8 68.2232ms | 
+2025-03-07 23:29:38.0537 | Info | Request finished HTTP/2 GET https://localhost:7155/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 1136.9474ms | 
+2025-03-07 23:29:38.5789 | Info | Request starting HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - | 
+2025-03-07 23:29:38.6337 | Info | Request finished HTTP/2 GET https://localhost:7155/Swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 54.6921ms | 
+2025-03-07 23:32:40.9164 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 | 
+2025-03-07 23:32:41.2931 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-07 23:32:41.5067 | Info | Route matched with {action = "LoginUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] LoginUser(ModelLayer.DTO.LoginDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-07 23:32:45.0897 | Info | Login attempt for user: rohit@abc.com | 
+2025-03-07 23:32:45.1429 | Info | Attempting login for email: rohit@abc.com | 
+2025-03-07 23:32:48.2593 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-07 23:32:53.0683 | Info | Executed DbCommand (500ms) [Parameters=[@__login_Email_0='?' (Size = 4000), @__login_Password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[Email], [a].[FirstName], [a].[LastName], [a].[Password]
+FROM [AllUsers] AS [a]
+WHERE ([a].[Email] = @__login_Email_0) AND ([a].[Password] = @__login_Password_1) | 
+2025-03-07 23:32:54.2795 | Info | Login successful for email: rohit@abc.com | 
+2025-03-07 23:32:54.2795 | Info | Login successful for user: rohit@abc.com | 
+2025-03-07 23:32:54.3910 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-07 23:32:54.4611 | Info | Executed action HelloApp.Controllers.HelloAppController.LoginUser (HelloApp) in 12914.8135ms | 
+2025-03-07 23:32:54.4611 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.LoginUser (HelloApp)' | 
+2025-03-07 23:32:54.5592 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/login application/json 58 - 200 - application/json;+charset=utf-8 13642.7911ms | 
+2025-03-07 23:36:01.3978 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/forgot-password application/json 30 | 
+2025-03-07 23:36:01.8916 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.ForgotPassword (HelloApp)' | 
+2025-03-07 23:36:01.9093 | Info | Route matched with {action = "ForgotPassword", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-07 23:36:01.9378 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-07 23:36:02.0364 | Info | Executed DbCommand (54ms) [Parameters=[@__forgotPasswordDTO_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[Email], [a].[FirstName], [a].[LastName], [a].[Password]
+FROM [AllUsers] AS [a]
+WHERE [a].[Email] = @__forgotPasswordDTO_Email_0 | 
+2025-03-07 23:36:04.0468 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-07 23:36:04.0965 | Info | Executed action HelloApp.Controllers.HelloAppController.ForgotPassword (HelloApp) in 2184.9552ms | 
+2025-03-07 23:36:04.0965 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.ForgotPassword (HelloApp)' | 
+2025-03-07 23:36:04.0965 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/forgot-password application/json 30 - 200 - application/json;+charset=utf-8 2701.0154ms | 
+2025-03-07 23:37:14.7159 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/register application/json 110 | 
+2025-03-07 23:37:14.7427 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.RegistrationUser (HelloApp)' | 
+2025-03-07 23:37:14.7427 | Info | Route matched with {action = "RegistrationUser", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegistrationUser(ModelLayer.DTO.RegisterDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-07 23:37:14.7800 | Info | Registering new user: rkroxx770@gmail.com | 
+2025-03-07 23:37:15.0316 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-07 23:37:15.1134 | Info | Executed DbCommand (46ms) [Parameters=[@__registerDTO_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[Email], [a].[FirstName], [a].[LastName], [a].[Password]
+FROM [AllUsers] AS [a]
+WHERE [a].[Email] = @__registerDTO_Email_0 | 
+2025-03-07 23:37:16.2131 | Info | Executed DbCommand (98ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [AllUsers] ([Email], [FirstName], [LastName], [Password])
+VALUES (@p0, @p1, @p2, @p3);
+SELECT [UserId]
+FROM [AllUsers]
+WHERE @@ROWCOUNT = 1 AND [UserId] = scope_identity(); | 
+2025-03-07 23:37:16.5491 | Info | User registered successfully: rkroxx770@gmail.com | 
+2025-03-07 23:37:16.5563 | Info | Executing CreatedResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[ModelLayer.DTO.RegistrationResponse, ModelLayer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. | 
+2025-03-07 23:37:16.5563 | Info | Executed action HelloApp.Controllers.HelloAppController.RegistrationUser (HelloApp) in 1810.9314ms | 
+2025-03-07 23:37:16.5563 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.RegistrationUser (HelloApp)' | 
+2025-03-07 23:37:16.5563 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/register application/json 110 - 201 - application/json;+charset=utf-8 1851.6503ms | 
+2025-03-07 23:38:26.4481 | Info | Request starting HTTP/2 POST https://localhost:7155/HelloApp/forgot-password application/json 36 | 
+2025-03-07 23:38:26.4627 | Info | Executing endpoint 'HelloApp.Controllers.HelloAppController.ForgotPassword (HelloApp)' | 
+2025-03-07 23:38:26.4627 | Info | Route matched with {action = "ForgotPassword", controller = "HelloApp"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ForgotPassword(ModelLayer.DTO.ForgotPasswordDTO) on controller HelloApp.Controllers.HelloAppController (HelloApp). | 
+2025-03-07 23:38:26.4627 | Info | Entity Framework Core 6.0.36 initialized 'HelloAppContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.36' with options: None | 
+2025-03-07 23:38:26.4932 | Info | Executed DbCommand (11ms) [Parameters=[@__forgotPasswordDTO_Email_0='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [a].[UserId], [a].[Email], [a].[FirstName], [a].[LastName], [a].[Password]
+FROM [AllUsers] AS [a]
+WHERE [a].[Email] = @__forgotPasswordDTO_Email_0 | 
+2025-03-07 23:38:26.5362 | Info | Executing OkObjectResult, writing value of type 'ModelLayer.DTO.ResponseModel`1[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. | 
+2025-03-07 23:38:26.5362 | Info | Executed action HelloApp.Controllers.HelloAppController.ForgotPassword (HelloApp) in 72.0154ms | 
+2025-03-07 23:38:26.5362 | Info | Executed endpoint 'HelloApp.Controllers.HelloAppController.ForgotPassword (HelloApp)' | 
+2025-03-07 23:38:26.5416 | Info | Request finished HTTP/2 POST https://localhost:7155/HelloApp/forgot-password application/json 36 - 200 - application/json;+charset=utf-8 93.5438ms | 
