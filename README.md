@@ -61,3 +61,5 @@ Task 29: 04-03-2025 assignment-REST APIs Implementation submitted
 Task 30: 06-03-2025 assignment-Redis Implementation submitted
 
 Task 31: 07-03-2025 assignment-RabbitMQ Implementation submitted
+
+Task 31: 17-03-2025 assignment-JS programming submitted
