@@ -62,4 +62,7 @@ Task 30: 06-03-2025 assignment-Redis Implementation submitted
 
 Task 31: 07-03-2025 assignment-RabbitMQ Implementation submitted
 
-Task 31: 17-03-2025 assignment-JS programming submitted
+Task 32: 17-03-2025 assignment-JS programming submitted
+
+Task 33: 18-03-2025 assignment-JS Data structure submitted
+
