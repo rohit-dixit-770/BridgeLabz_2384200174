@@ -66,3 +66,5 @@ Task 32: 17-03-2025 assignment-JS programming submitted
 
 Task 33: 18-03-2025 assignment-JS Data structure submitted
 
+Task 34: 20-03-2025 assignment-HTML, CSS and Flexbox intro submitted
+
