@@ -1,0 +1,15 @@
+<main class="main">
+  <div class="content">
+    <h1>{{title}}</h1>
+    <h3>Hello {{ userName }} from BridgeLabz!</h3>
+    <img [src]="imgUrl" (click)="openBridgeLabz()"
+      alt="The BridgeLabz logo: a Bridge to Employment through a Lab Work" />
+  </div>
+
+  <input type="text" [(ngModel)]="userName" (input)="validateUserName()" placeholder="Enter your name">
+
+  <p *ngIf="nameError" class="error-input">{{ nameError }}</p>
+  <p></p>
+</main>
+
+<router-outlet />
