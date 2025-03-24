@@ -1,0 +1,63 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card shadow-lg">
+          <div class="card-header bg-primary text-white text-center">
+            <h3>Register</h3>
+          </div>
+          <div class="card-body">
+            <form [formGroup]="registerForm" (ngSubmit)="register()">
+              <!-- Full Name -->
+              <div class="mb-3">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" id="fullName" class="form-control" formControlName="fullName">
+                <small class="text-danger" *ngIf="registerForm.get('fullName')?.invalid && registerForm.get('fullName')?.touched">
+                  Full Name is required (Min 3 characters)
+                </small>
+              </div>
+  
+              <!-- Email -->
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" id="email" class="form-control" formControlName="email">
+                <small class="text-danger" *ngIf="registerForm.get('email')?.invalid && registerForm.get('email')?.touched">
+                  Valid Email is required
+                </small>
+              </div>
+  
+              <!-- Password -->
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control" formControlName="password">
+                <small class="text-danger" *ngIf="registerForm.get('password')?.invalid && registerForm.get('password')?.touched">
+                  Password must be at least 6 characters
+                </small>
+              </div>
+  
+              <!-- Confirm Password -->
+              <div class="mb-3">
+                <label for="confirmPassword" class="form-label">Confirm Password</label>
+                <input type="password" id="confirmPassword" class="form-control" formControlName="confirmPassword">
+                <small class="text-danger" *ngIf="registerForm.value.password !== registerForm.value.confirmPassword">
+                  Passwords do not match!
+                </small>
+              </div>
+  
+              <!-- Error Message -->
+              <div *ngIf="errorMessage" class="alert alert-danger">
+                {{ errorMessage }}
+              </div>
+  
+              <!-- Submit Button -->
+              <div class="d-grid">
+                <button type="submit" class="btn btn-success" [disabled]="registerForm.invalid">Register</button>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer text-center">
+            <p>Already have an account? <a routerLink="/login"  class="text-primary fw-bold">Login here</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
